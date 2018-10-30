@@ -57,3 +57,12 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 chsh -s /bin/zsh
 ```
 
+# Remove old stuff
+
+You might have some stuff on your machine installed with a earlier version of python. Remove these packages and then remove python3.
+
+```
+brew install python
+pip3 freeze | xargs pip3 uninstall -y
+pip3 freeze | grep -v "^-e" | xargs pip3 uninstall -y
+```
