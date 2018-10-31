@@ -7,6 +7,13 @@ First install brew.
 ```
 xcode-select --install
 install -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
+```
+
+Or intall manually in case the file is missing or installation is not working:
+
+https://developer.apple.com/download 
+
+```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
